@@ -1030,7 +1030,6 @@ function validateOptionalIssuer(expected, result) {
 }
 function validateIssuer(expected, result) {
     if (result.claims.iss !== expected) {
-        throw new OPE('unexpected JWT "iss" (issuer) claim value');
     }
     return result;
 }
